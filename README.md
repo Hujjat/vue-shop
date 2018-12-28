@@ -1,5 +1,10 @@
 # vue-shop
 
+A Youtube video series where web build a practical e-commerce web app with vuejs and firebase. (Don't just watch the video, do it practically)
+
+[Vuejs Full-Stack Course (AWS / Firebase) Build E-Commerce Website
+](https://www.youtube.com/watch?v=UrUuvNyK-Os&list=PLB4AdipoHpxYPjGo0n2m6tmCLud_iSEbv)
+
 ## Project setup
 ```
 npm install
