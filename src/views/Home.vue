@@ -2,7 +2,7 @@
   <div class="home">
       <Hero/>
 
-      Products  
+        
   </div>
 </template>
 
