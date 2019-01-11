@@ -62,10 +62,10 @@
                             </router-link>
                         </li>
                         <li>
-                            <a href="#">
+                            <router-link to="/admin/orders">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span>Orders</span>
-                            </a>
+                            </router-link>
                         </li>
 
                         <li>
