@@ -2,6 +2,8 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 import Admin from "./views/Admin.vue";
+import Overview from "./views/Overview.vue";
+import Products from "./views/Products.vue";
 
 Vue.use(Router);
 
@@ -17,10 +19,22 @@ export default new Router({
     {
       path: "/admin",
       name: "admin",
-      component: Admin
+      component: Admin,
+      children:[
+        {
+          path: "overview",
+          name: "overview",
+          component: Overview
+        },
+        {
+          path: "products",
+          name: "products",
+          component: Products
+        }
+      ]
     },
     {
-      path: "/about",
+      path: "about",
       name: "about",
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route

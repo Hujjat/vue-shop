@@ -50,16 +50,16 @@
                         </li>
 
                         <li>
-                            <a href="#">
+                            <router-link to="/admin/overview">
                                 <i class="fa fa-chart-line"></i>
                                 <span>Overview</span>
-                            </a>
+                            </router-link>
                         </li>
                         <li>
-                            <a href="#">
+                            <router-link to="/admin/products">
                                 <i class="fab fa-amazon"></i>
                                 <span>Products</span>
-                            </a>
+                            </router-link>
                         </li>
                         <li>
                             <a href="#">
@@ -82,15 +82,7 @@
         </nav>
         <!-- sidebar-content  -->
         <main class="page-content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="form-group col-md-12">
-                        <h2>Sidebar template</h2>
-                        <p>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.</p>
-
-                    </div>
-                </div>
-            </div>
+            <router-view/>
         </main>
         <!-- page-content" -->
     </div>
