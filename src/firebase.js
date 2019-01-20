@@ -11,4 +11,4 @@
     messagingSenderId: "892402191551"
   };
   
-  firebase.initializeApp(config);
+  export const fb = firebase.initializeApp(config);

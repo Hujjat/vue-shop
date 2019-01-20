@@ -42,20 +42,20 @@
                              
                             <div class="form-group">
                                 <label for="name">Your name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Your nice name">
+                                <input type="text" v-model="name" class="form-control" id="name" placeholder="Your nice name">
                             </div>
 
                             <div class="form-group">
                                 <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                <input type="email"  v-model="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                             </div>
                             <div class="form-group">
                                 <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                <input type="password" v-model="password" class="form-control" id="password" placeholder="Password">
                             </div>
 
                             <div class="form-group">
-                                <button class="btn btn-primary">Signup</button>
+                                <button class="btn btn-primary" @click="register">Signup</button>
                             </div>
 
                         </div>
@@ -73,12 +73,41 @@
 
 <script>
 
-import firebase from '../firebase'
+import {fb} from '../firebase'
 
 export default {
   name: "Login",
   props: {
     msg: String
+  },
+  data(){
+      return {
+          name:null,
+          email:null,
+          password:null
+      }
+  },
+
+  methods:{
+      register(){
+            fb.auth().createUserWithEmailAndPassword(this.email, this.password)
+                .then((user) => {
+                    $('#login').modal('hide')
+                    this.$router.replace('admin');
+                })
+                .catch(function(error) {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                if (errorCode == 'auth/weak-password') {
+                    alert('The password is too weak.');
+                } else {
+                    alert(errorMessage);
+                }
+                console.log(error);
+            });
+      }
+
   }
 };
 </script>
