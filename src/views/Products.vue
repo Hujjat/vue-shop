@@ -15,6 +15,27 @@
               </div>
             </div>
           </div>
+
+          <hr>
+
+          <h3>Basic CRUD (create/read/update/delete) in Firebase and Vue</h3>
+
+          <div class="product-test">
+            <div class="form-group">
+               <input type="text" placeholder="Product Name" v-model="name" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <input type="text" placeholder="Price" v-model="price" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <button @click="saveData" class="btn btn-primary">Save Data</button>
+            </div>
+
+
+
+          </div>
       </div>
     
   </div>
@@ -25,6 +46,17 @@ export default {
   name: "Products",
   props: {
     msg: String
+  },
+
+  data(){
+    return {
+    
+    }
+  },
+  methods:{
+    saveData(){
+
+    }
   }
 };
 </script>
