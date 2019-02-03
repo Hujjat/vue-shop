@@ -22,11 +22,11 @@
 
           <div class="product-test">
             <div class="form-group">
-               <input type="text" placeholder="Product Name" v-model="name" class="form-control">
+               <input type="text" placeholder="Product Name" v-model="product.name" class="form-control">
             </div>
 
             <div class="form-group">
-              <input type="text" placeholder="Price" v-model="price" class="form-control">
+              <input type="text" placeholder="Price" v-model="product.price" class="form-control">
             </div>
 
             <div class="form-group">
@@ -42,6 +42,9 @@
 </template>
 
 <script>
+
+import { fb, db} from '../firebase';
+
 export default {
   name: "Products",
   props: {
@@ -50,12 +53,28 @@ export default {
 
   data(){
     return {
-    
+        product: {
+          name:null,
+          price:null
+        }
     }
   },
   methods:{
     saveData(){
 
+      db.collection("products").add(this.product)
+      .then((docRef) => {
+          console.log("Document written with ID: ", docRef.id);
+          this.reset();
+      })
+      .catch(function(error) {
+          console.error("Error adding document: ", error);
+      });
+
+    },
+
+    reset(){
+      Object.assign(this.$data, this.$options.data.apply(this));
     }
   }
 };
