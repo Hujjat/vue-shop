@@ -90,7 +90,20 @@ export default {
   },
   methods:{
     deleteProduct(doc){
-        alert(doc);
+        if(confirm('Are you sure ? ')){
+
+          db.collection("products").doc(doc).delete().then(function() {
+              console.log("Document successfully deleted!");
+          }).catch(function(error) {
+              console.error("Error removing document: ", error);
+          });
+
+          
+
+
+        }else{
+
+        }
     },
     readData(){
 
