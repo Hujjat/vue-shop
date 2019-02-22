@@ -37,7 +37,11 @@
                   </thead>
 
                   <tbody>
-
+                      <tr v-for="product in products">
+                        <td>
+                          {{product.name}}
+                        </td>
+                      </tr>
 
 
                   </tbody>
@@ -165,7 +169,7 @@ export default {
     addProduct(){
       
       this.$firestore.products.add(this.product);
-
+      $('#product').modal('hide');
     }
 
   
