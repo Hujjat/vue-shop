@@ -41,6 +41,17 @@
                         <td>
                           {{product.name}}
                         </td>
+
+                        <td>
+                          {{product.price}}
+                        </td>
+
+                        <td>
+
+                          <button class="btn btn-primary" @click="editProduct(product)">Edit</button>
+                          <button class="btn btn-danger" @click="deleteProduct(product)">Delete</button>
+                        </td>
+
                       </tr>
 
 
@@ -101,7 +112,8 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button @click="addProduct()" type="button" class="btn btn-primary">Save changes</button>
+              <button @click="addProduct()" type="button" class="btn btn-primary" v-if="modal == 'new'">Save changes</button>
+              <button @click="updateProduct()" type="button" class="btn btn-primary" v-if="modal == 'edit'">Apply changes</button>
             </div>
           </div>
         </div>
@@ -132,7 +144,8 @@ export default {
           tag:null,
           image:null
         },
-        activeItem:null
+        activeItem:null,
+        modal: null
     }
   },
 
@@ -146,19 +159,52 @@ export default {
     uploadImage(){},
 
     addNew(){
+        this.modal = 'new';
         $('#product').modal('show');
     },
     updateProduct(){
+        this.$firestore.products.doc(this.product.id).update(this.product);
+          Toast.fire({
+            type: 'success',
+            title: 'Updated  successfully'
+          })
 
+           $('#product').modal('hide');
     },
 
     editProduct(product){
-     
-
+      this.modal = 'edit';
+      this.product = product;
+      $('#product').modal('show');
     },
 
 
     deleteProduct(doc){
+
+
+      Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+        if (result.value) {
+
+          this.$firestore.products.doc(doc['.key']).delete()
+
+          Toast.fire({
+            type: 'success',
+            title: 'Deleted  successfully'
+          })
+
+        
+        }
+      })
+
+
         
     },
     readData(){
@@ -169,6 +215,12 @@ export default {
     addProduct(){
       
       this.$firestore.products.add(this.product);
+      
+          Toast.fire({
+            type: 'success',
+            title: 'Product created successfully'
+          })
+
       $('#product').modal('hide');
     }
 
