@@ -82,7 +82,7 @@
                     </div>
 
                     <div class="form-group">
-                      <textarea name="description" class="form-control" placeholder="Product description" v-model='product.description' cols="30" rows="10"></textarea>
+                      <vue-editor v-model="product.description"></vue-editor>
                     </div>
                   </div>
                   <!-- product sidebar -->
@@ -95,7 +95,7 @@
                     </div>
 
                     <div class="form-group">
-                      <input type="text" placeholder="Product tags" v-model="product.tag" class="form-control">
+                      <input type="text" @keyup.188="addTag" placeholder="Product tags" v-model="tag" class="form-control">
                     </div>
 
                     <div class="form-group">
@@ -125,11 +125,14 @@
 </template>
 
 <script>
-
+import { VueEditor } from "vue2-editor";
 import { fb, db} from '../firebase';
 
 export default {
   name: "Products",
+  components: {
+    VueEditor
+  },
   props: {
     msg: String
   },
@@ -141,11 +144,12 @@ export default {
           name:null,
           description:null,
           price:null,
-          tag:null,
+          tags:[],
           image:null
         },
         activeItem:null,
-        modal: null
+        modal: null,
+        tag: null
     }
   },
 
@@ -156,6 +160,10 @@ export default {
   },
   methods:{
 
+    addTag(){
+       this.product.tags.push(this.tag);
+       this.tag = "";
+    },
     uploadImage(){},
 
     addNew(){
