@@ -100,7 +100,7 @@
 
                     <div class="form-group">
                       <label for="product_image">Product Images</label>
-                      <input type="file" @change="uploadImage()" class="form-control">
+                      <input type="file" @change="uploadImage" class="form-control">
                     </div>
 
                   </div>
@@ -164,7 +164,30 @@ export default {
        this.product.tags.push(this.tag);
        this.tag = "";
     },
-    uploadImage(){},
+    uploadImage(e){
+
+      let file = e.target.files[0];
+
+      var storageRef = fb.storage().ref('products/'+ file.name);
+
+      let uploadTask  = storageRef.put(file);
+
+      uploadTask.on('state_changed', (snapshot) => {
+        
+      }, (error) => {
+        // Handle unsuccessful uploads
+      }, () => {
+        // Handle successful uploads on complete
+        // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+        uploadTask.snapshot.ref.getDownloadURL().then((downloadURL) => {
+          this.product.image = downloadURL;
+          console.log('File available at', downloadURL);
+        });
+      });
+
+
+
+    },
 
     addNew(){
         this.modal = 'new';
