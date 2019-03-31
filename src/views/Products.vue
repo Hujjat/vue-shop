@@ -202,7 +202,7 @@ export default {
         
           let file = e.target.files[0];
     
-          var storageRef = fb.storage().ref('products/'+ file.name);
+          var storageRef = fb.storage().ref('products/'+ Math.random() + '_'  + file.name);
     
           let uploadTask  = storageRef.put(file);
     
