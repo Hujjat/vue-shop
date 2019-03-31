@@ -213,10 +213,11 @@ export default {
           }, () => {
             // Handle successful uploads on complete
             // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+            
             uploadTask.snapshot.ref.getDownloadURL().then((downloadURL) => {
               this.product.images.push(downloadURL);
-              console.log('File available at', downloadURL);
             });
+
           });
 
       }
