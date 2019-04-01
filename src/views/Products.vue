@@ -227,8 +227,19 @@ export default {
 
     },
 
+    reset(){
+      this.product = {
+          name:null,
+          description:null,
+          price:null,
+          tags:[],
+          images:[]
+      }
+    },
+
     addNew(){
         this.modal = 'new';
+        this.reset();
         $('#product').modal('show');
     },
     updateProduct(){
