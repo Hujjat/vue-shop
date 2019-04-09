@@ -166,57 +166,11 @@ export default {
       }
   },
   methods:{
-
-    deleteImage(img,index){
-
-    
-
-    },
-
-    addTag(){
-     
-    },
-    uploadImage(e){
-
-
-    },
-
-    reset(){
-    
-    },
-
-    addNew(){
-       
-    },
-    updateProduct(){
-       
-    },
-
-    editProduct(){
-     
-    },
-
-
-    deleteProduct(){
-
-        
-    },
-    readData(){
-
       
-     
-    },
-    addProduct(){
-      
-    
-    }
-
-  
   },
   created(){
-  
-
   }
+
 };
 </script>
 
