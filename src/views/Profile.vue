@@ -40,7 +40,7 @@
                         
                         <div class="col-md-6">
                           <div class="form-group">
-                            <input type="text" name="" v-model="profile.fullName" placeholder="Full name" class="form-control">
+                            <input type="text" name="" v-model="profile.name" placeholder="Full name" class="form-control">
                           </div>
                         </div>
 
@@ -64,7 +64,7 @@
 
                         <div class="col-md-4">
                           <div class="form-group">
-                              <input type="submit" value="Save Changes" class="btn btn-primary w-100">
+                              <input type="submit" @click="updateProfile" value="Save Changes" class="btn btn-primary w-100">
                           </div>
                         </div>
 
@@ -131,7 +131,7 @@ import { VueEditor } from "vue2-editor";
 import { fb, db} from '../firebase';
 
 export default {
-  name: "Products",
+  name: "profile",
   components: {
     VueEditor
   },
@@ -142,7 +142,7 @@ export default {
   data(){
     return {
         profile: {
-          fullName:null,
+          name:null,
           phone:null,
           address:null,
           postcode:null
@@ -161,12 +161,16 @@ export default {
   },
 
   firestore(){
+      const user = fb.auth().currentUser;
       return {
-
+        profile: db.collection('profiles').doc(user.uid),
       }
   },
   methods:{
-      
+      updateProfile(){
+          this.$firestore.profile.update(this.profile);
+      },
+      uploadImage(){}
   },
   created(){
   }
