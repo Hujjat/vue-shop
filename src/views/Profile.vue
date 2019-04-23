@@ -76,7 +76,11 @@
                 <div class="tab-pane fade pt-3" id="account" role="tabpanel" aria-labelledby="account-tab">
                   <div class="container">
                       <div class="row">
-
+                        <div class="col-md-">
+                            <div class="alert alert-info">
+                              Please use the Reset password email button for reseting the password. The form doens't work currently
+                            </div>
+                        </div>
                         <div class="col-md-6">
                           <div class="form-group">
                             <input type="text"  v-model="account.name" placeholder="User name" class="form-control">
@@ -101,7 +105,7 @@
                           </div>
                         </div>
 
-                        <div class="col-md-8">
+                        <div class="col-md-4">
                           <div class="form-group">
                               <input type="file" @change="uploadImage" class="form-control">
                            </div>
@@ -110,6 +114,12 @@
                         <div class="col-md-4">
                           <div class="form-group">
                               <input type="submit" value="Save Changes" class="btn btn-primary w-100">
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="form-group">
+                              <input type="button" @click="resetPassword"value="Reset password email" class="btn btn-success w-100">
                           </div>
                         </div>
                       </div>
@@ -167,6 +177,19 @@ export default {
       }
   },
   methods:{
+      resetPassword(){
+          const auth = fb.auth();          
+
+          auth.sendPasswordResetEmail(auth.currentUser.email).then(() =>  {
+               Toast.fire({
+                type: 'success',
+                title: 'Email sent'
+              })
+          }).catch((error) =>  {
+              console.log(error);
+          });
+      },
+
       updateProfile(){
           this.$firestore.profile.update(this.profile);
       },
