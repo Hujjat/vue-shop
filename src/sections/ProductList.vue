@@ -6,13 +6,16 @@
               
               <div class="col-md-4" v-for="product in products">
                   <div class="card product-item">
-                    <img src="/img/products/product1.jpg" class="card-img-top" alt="...">
+
+                        <carousel :perPage="1">
+                          <slide v-for="(image, index) in product.images">
+                                <img :src="image" class="card-img-top" alt="..." width="250px">
+                          </slide>
+                        </carousel>
+                
                         <div class="card-body">
                             <h5 class="card-title">{{ product.name }}</h5>
-                            <p class="card-text">
-                                {{ product.description }}
-
-                            </p>
+                           
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                         </div>
                     </div>
