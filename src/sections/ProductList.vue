@@ -14,7 +14,11 @@
                         </carousel>
                 
                         <div class="card-body">
+                          <div class="d-flex justify-content-between">
                             <h5 class="card-title">{{ product.name }}</h5>
+                            <h5 class="card-priceS">{{ product.price | currency }}</h5>
+
+                          </div>
                            
                             <a href="#" class="btn btn-primary">Add to Cart</a>
                         </div>
