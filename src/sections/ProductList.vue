@@ -20,7 +20,12 @@
 
                           </div>
                            
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                            <add-to-cart 
+                                :product-image="getImage(product.images)"
+                                :product-id="product.id"
+                                :price="product.price"
+                                :name="product.name">
+                            </add-to-cart>
                         </div>
                     </div>
               </div>
@@ -46,6 +51,14 @@ data(){
         products: [],
      
     }
+  },
+
+  methods:{
+
+    getImage(images){
+      return images[0];
+    }
+
   },
 
   firestore(){

@@ -40,6 +40,7 @@ window.Toast = Toast;
 
 
 Vue.component('Navbar', require('./components/Navbar.vue').default);
+Vue.component('add-to-cart', require('./components/AddToCart.vue').default);
 Vue.component('products-list', require('./sections/ProductList.vue').default);
 
 import VueCarousel from 'vue-carousel';
