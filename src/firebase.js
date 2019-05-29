@@ -3,7 +3,6 @@ import 'firebase/firestore'
 import 'firebase/firebase-auth'
 import 'firebase/storage'
   // Initialize Firebase
-  // fill with your own data please
   var config = {
     apiKey: "",
     authDomain: "",
