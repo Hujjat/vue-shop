@@ -39,6 +39,10 @@ const Toast = Swal.mixin({
 window.Toast = Toast;
 
 
+
+import store from './store.js';
+
+
 Vue.component('Navbar', require('./components/Navbar.vue').default);
 Vue.component('add-to-cart', require('./components/AddToCart.vue').default);
 Vue.component('products-list', require('./sections/ProductList.vue').default);
@@ -55,6 +59,7 @@ fb.auth().onAuthStateChanged(function(user) {
   if(!app){
     new Vue({
       router,
+      store,
       render: h => h(App)
     }).$mount("#app");
     
