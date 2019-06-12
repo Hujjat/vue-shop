@@ -12,6 +12,7 @@ export default {
   props: {
     name: String,
     price: String,
+    image: String,
     productId: String
   },
 
@@ -19,8 +20,9 @@ export default {
       return {
           item :{
             productName: this.name,
+            productImage: this.image,
             productPrice: this.price,
-            product_id: this.id,
+            productId: this.id,
           }
 
       }

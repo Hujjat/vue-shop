@@ -65,7 +65,6 @@ fb.auth().onAuthStateChanged(function(user) {
     
   }
 
-
 });
 
 
