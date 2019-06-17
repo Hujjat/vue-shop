@@ -26,7 +26,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue Shopping</button>
-                <button type="button" class="btn btn-primary">Checkout</button>
+                <button type="button" class="btn btn-primary" @click="checkout">Checkout</button>
               </div>
             </div>
           </div>
@@ -41,6 +41,14 @@ export default {
   name: "MiniCart",
   props: {
     msg: String
+  },
+  methods:{
+
+    checkout(){
+      $('#miniCart').modal('hide')
+      this.$router.push('/checkout')  
+    }
+
   }
 };
 </script>
