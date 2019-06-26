@@ -12,7 +12,11 @@
                         <li v-for="item in this.$store.state.cart" class="media">
                         <img :src="item.productImage" width="80px" class="align-self-center mr-3" alt="">
                         <div class="media-body">
-                            <h5 class="mt-0">{{item.productName}}</h5>
+                            <h5 class="mt-0">{{item.productName}}
+
+                                <span class='float-right' @click="$store.commit('removeFromCart',item)">X</span>
+
+                            </h5>
                             <p class="mt-0">{{item.productPrice | currency}}</p>
                             <p class="mt-0">Quantity : {{item.productQuantity }}</p>
                         </div>
