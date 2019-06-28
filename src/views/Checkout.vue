@@ -25,7 +25,13 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    Total Price
+                    Total Price : {{ this.$store.getters.totalPrice | currency }}
+
+                    <button class="btn btn-primary mt-4">
+                        <i class="fas fa-cart-arrow-down"></i>
+                            Proceed Checkout
+                            
+                    </button>
                 </div>
             </div>
 
