@@ -16,6 +16,7 @@
     "vue-carousel": "^0.18.0",
     "vue-firestore": "^0.3.18",
     "vue-router": "^3.0.1",
+    "vue-stripe-elements-plus": "^0.2.10",
     "vue2-editor": "^2.6.6",
     "vue2-filters": "^0.6.0",
     "vuex": "^3.1.1"
