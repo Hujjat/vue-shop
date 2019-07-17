@@ -23,15 +23,10 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-<<<<<<< HEAD
             <a class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#login">Get Start</a>
             <a class="btn btn-outline-info border-0 mx-2 my-2 my-sm-0" data-toggle="modal" data-target="#miniCart">
               <i class="fas fa-cart-plus"></i>
             </a>
-=======
-            <a class="btn btn-outline-success my-2 my-sm-0 mx-2" data-toggle="modal" data-target="#login">Get Start</a>
-            <a class="btn btn-outline-info my-2 my-sm-0 mx-2" data-toggle="modal" data-target="#miniCart">Cart</a>
->>>>>>> 19d0dfa6d78329797a8028b0b9219e96b12c6831
           </form>
         </div>
 
