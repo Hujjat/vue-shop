@@ -1,0 +1,166 @@
+[debug] [2019-07-25T10:20:14.606Z] ----------------------------------------------------------------------
+[debug] [2019-07-25T10:20:14.611Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\CodeInspire\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2019-07-25T10:20:14.611Z] CLI Version:   7.1.0
+[debug] [2019-07-25T10:20:14.611Z] Platform:      win32
+[debug] [2019-07-25T10:20:14.611Z] Node Version:  v10.13.0
+[debug] [2019-07-25T10:20:14.613Z] Time:          Thu Jul 25 2019 20:20:14 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2019-07-25T10:20:14.613Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-25T10:20:14.634Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-25T10:20:14.636Z] > authorizing via signed-in user
+[debug] [2019-07-25T10:20:14.636Z] [iam] checking project vue-shop-5a95e for permissions ["firebase.projects.get"]
+[debug] [2019-07-25T10:20:14.642Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vue-shop-5a95e:testIamPermissions  
+
+[debug] [2019-07-25T10:20:16.331Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-25T10:20:16.337Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/vue-shop-5a95e  
+ 
+[debug] [2019-07-25T10:20:18.581Z] <<< HTTP RESPONSE 200
+[info] +  functions: Using node@10 from host.
+[debug] [2019-07-25T10:20:18.635Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/vue-shop-5a95e/adminSdkConfig  
+ 
+[debug] [2019-07-25T10:20:19.284Z] <<< HTTP RESPONSE 200
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\CodeInspire\Desktop\Vue\vue-shop\functions" for Cloud Functions...
+[debug] [2019-07-25T10:20:21.009Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions","node_version":"10.13.0"}
+[debug] [2019-07-25T10:20:21.010Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-25T10:20:21.023Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:20:21.026Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:20:21.028Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:20:21.149Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:20:21.264Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[info] i  functions: HTTP trigger initialized at http://localhost:5000/vue-shop-5a95e/us-central1/helloWorld
+[info] i  functions: HTTP trigger initialized at http://localhost:5000/vue-shop-5a95e/us-central1/Hello
+[debug] [2019-07-25T10:20:52.676Z] Accepted request GET /vue-shop-5a95e/us-central1/Hello --> Hello
+[debug] [2019-07-25T10:20:54.411Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions","node_version":"10.13.0"}
+[info] i  functions: Beginning execution of "Hello"
+[debug] [2019-07-25T10:20:54.414Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-25T10:20:54.433Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:20:54.441Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:20:54.442Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:20:54.576Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:20:54.725Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-07-25T10:20:54.776Z] [runtime-status] Trigger "Hello" has been found, beginning invocation! {}
+[debug] [2019-07-25T10:20:54.777Z] [runtime-status]  {"httpsTrigger":{},"name":"Hello","entryPoint":"Hello"}
+[debug] [2019-07-25T10:20:54.777Z] [runtime-status] Running Hello in mode HTTPS {}
+[debug] [2019-07-25T10:20:54.778Z] [default-admin-app-used]  {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[debug] [2019-07-25T10:20:54.780Z] [runtime-status] Intializing default app. {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-07-25T10:20:54.797Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\4748"}
+[debug] [2019-07-25T10:20:54.808Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\4748"}
+[debug] [2019-07-25T10:20:54.826Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-07-25T10:20:54.842Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "Hello" in ~1s
+[debug] [2019-07-25T10:21:28.704Z] Accepted request GET /vue-shop-5a95e/us-central1/Hello?name=Ali&lastName=Jan --> Hello
+[debug] [2019-07-25T10:21:29.964Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions","node_version":"10.13.0"}
+[info] i  functions: Beginning execution of "Hello"
+[debug] [2019-07-25T10:21:29.968Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-25T10:21:29.976Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:21:29.981Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:21:29.984Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:21:30.106Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:21:30.205Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-07-25T10:21:30.257Z] [runtime-status] Trigger "Hello" has been found, beginning invocation! {}
+[debug] [2019-07-25T10:21:30.258Z] [runtime-status]  {"httpsTrigger":{},"name":"Hello","entryPoint":"Hello"}
+[debug] [2019-07-25T10:21:30.258Z] [runtime-status] Running Hello in mode HTTPS {}
+[debug] [2019-07-25T10:21:30.262Z] [default-admin-app-used]  {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[debug] [2019-07-25T10:21:30.262Z] [runtime-status] Intializing default app. {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-07-25T10:21:30.274Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\5720"}
+[debug] [2019-07-25T10:21:30.284Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\5720"}
+[debug] [2019-07-25T10:21:30.303Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-07-25T10:21:30.316Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "Hello" in ~1s
+[debug] [2019-07-25T10:21:55.901Z] Accepted request POST /vue-shop-5a95e/us-central1/Hello?name=Ali&lastName=Jan --> Hello
+[debug] [2019-07-25T10:21:56.980Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions","node_version":"10.13.0"}
+[info] i  functions: Beginning execution of "Hello"
+[debug] [2019-07-25T10:21:56.984Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-25T10:21:56.991Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:21:56.994Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:21:56.995Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:21:57.102Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:21:57.195Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-07-25T10:21:57.244Z] [runtime-status] Trigger "Hello" has been found, beginning invocation! {}
+[debug] [2019-07-25T10:21:57.244Z] [runtime-status]  {"httpsTrigger":{},"name":"Hello","entryPoint":"Hello"}
+[debug] [2019-07-25T10:21:57.244Z] [runtime-status] Running Hello in mode HTTPS {}
+[debug] [2019-07-25T10:21:57.245Z] [default-admin-app-used]  {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[debug] [2019-07-25T10:21:57.246Z] [runtime-status] Intializing default app. {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-07-25T10:21:57.258Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\1552"}
+[debug] [2019-07-25T10:21:57.260Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\1552"}
+[debug] [2019-07-25T10:21:57.275Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-07-25T10:21:57.295Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "Hello" in ~1s
+[debug] [2019-07-25T10:24:27.900Z] File C:\Users\CodeInspire\Desktop\Vue\vue-shop\functions\index.js changed, reloading triggers
+[debug] [2019-07-25T10:24:31.794Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions","node_version":"10.13.0"}
+[debug] [2019-07-25T10:24:31.796Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-25T10:24:31.823Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:24:31.831Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:24:31.835Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:24:31.973Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:24:32.101Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-07-25T10:24:38.840Z] Accepted request GET /vue-shop-5a95e/us-central1/Hello?name=Ali&lastName=Jan --> Hello
+[debug] [2019-07-25T10:24:40.116Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions","node_version":"10.13.0"}
+[info] i  functions: Beginning execution of "Hello"
+[debug] [2019-07-25T10:24:40.119Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-25T10:24:40.131Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:24:40.135Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:24:40.137Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:24:40.261Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:24:40.378Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-07-25T10:24:40.431Z] [runtime-status] Trigger "Hello" has been found, beginning invocation! {}
+[debug] [2019-07-25T10:24:40.431Z] [runtime-status]  {"httpsTrigger":{},"name":"Hello","entryPoint":"Hello"}
+[debug] [2019-07-25T10:24:40.432Z] [runtime-status] Running Hello in mode HTTPS {}
+[debug] [2019-07-25T10:24:40.434Z] [default-admin-app-used]  {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[debug] [2019-07-25T10:24:40.434Z] [runtime-status] Intializing default app. {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-07-25T10:24:40.450Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\11512"}
+[debug] [2019-07-25T10:24:40.454Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\11512"}
+[debug] [2019-07-25T10:24:40.477Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-07-25T10:24:40.493Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "Hello" in ~1s
+[debug] [2019-07-25T10:24:49.634Z] Accepted request POST /vue-shop-5a95e/us-central1/Hello?name=Ali&lastName=Jan --> Hello
+[debug] [2019-07-25T10:24:50.890Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions","node_version":"10.13.0"}
+[info] i  functions: Beginning execution of "Hello"
+[debug] [2019-07-25T10:24:50.893Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-25T10:24:50.905Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:24:50.909Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:24:50.911Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:24:51.032Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:24:51.142Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-07-25T10:24:51.185Z] [runtime-status] Trigger "Hello" has been found, beginning invocation! {}
+[debug] [2019-07-25T10:24:51.185Z] [runtime-status]  {"httpsTrigger":{},"name":"Hello","entryPoint":"Hello"}
+[debug] [2019-07-25T10:24:51.185Z] [runtime-status] Running Hello in mode HTTPS {}
+[debug] [2019-07-25T10:24:51.185Z] [default-admin-app-used]  {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[debug] [2019-07-25T10:24:51.186Z] [runtime-status] Intializing default app. {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-07-25T10:24:51.200Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\2472"}
+[debug] [2019-07-25T10:24:51.203Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\2472"}
+[debug] [2019-07-25T10:24:51.225Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-07-25T10:24:51.239Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "Hello" in ~1s
+[debug] [2019-07-25T10:25:12.021Z] Accepted request GET /vue-shop-5a95e/us-central1/Hello?name=Ali&lastName=Jan --> Hello
+[debug] [2019-07-25T10:25:13.420Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions","node_version":"10.13.0"}
+[info] i  functions: Beginning execution of "Hello"
+[debug] [2019-07-25T10:25:13.425Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-25T10:25:13.444Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:25:13.448Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:25:13.450Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-25T10:25:13.580Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-25T10:25:13.735Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-07-25T10:25:13.795Z] [runtime-status] Trigger "Hello" has been found, beginning invocation! {}
+[debug] [2019-07-25T10:25:13.796Z] [runtime-status]  {"httpsTrigger":{},"name":"Hello","entryPoint":"Hello"}
+[debug] [2019-07-25T10:25:13.796Z] [runtime-status] Running Hello in mode HTTPS {}
+[debug] [2019-07-25T10:25:13.797Z] [default-admin-app-used]  {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[debug] [2019-07-25T10:25:13.797Z] [runtime-status] Intializing default app. {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-07-25T10:25:13.829Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\9192"}
+[debug] [2019-07-25T10:25:13.838Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\9192"}
+[debug] [2019-07-25T10:25:13.862Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-07-25T10:25:13.896Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "Hello" in ~1s
