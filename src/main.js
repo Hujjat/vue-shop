@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import jQuery from 'jquery';
+//import jQuery from 'jquery';
 import {fb}   from './firebase'
 import VueFirestore from 'vue-firestore'
 require('firebase/firestore')
@@ -18,7 +18,7 @@ Vue.use(VueFirestore)
 import Vue2Filters from 'vue2-filters'
 Vue.use(Vue2Filters)
 
-window.$ = window.jQuery = jQuery;
+window.$ = window.jQuery = require('jquery');
 
 import 'popper.js';
 import 'bootstrap';
