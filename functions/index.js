@@ -9,15 +9,3 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
  
 });
 
-
-exports.Hello = functions.https.onRequest((request, response) => {
-
-    if(request.method == 'POST'){
-        response.send("Hello: "+ request.query.lastName);
-    }else{
-        response.send("Please send post request");
-    }
-    
-});
-   
-   
