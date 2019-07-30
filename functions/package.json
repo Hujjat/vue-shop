@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "firebase-admin": "^8.3.0",
-    "firebase-functions": "^3.2.0"
+    "firebase-functions": "^3.2.0",
+    "stripe": "^7.5.0"
   },
   "engines": {
     "node": "10"

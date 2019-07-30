@@ -8,10 +8,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "bootstrap": "^4.2.1",
     "firebase": "^5.8.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.6",
+    "stripe": "^7.5.0",
     "vue": "^2.5.17",
     "vue-carousel": "^0.18.0",
     "vue-firestore": "^0.3.18",
