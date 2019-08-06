@@ -75,7 +75,7 @@ export default {
 
   created(){
 
-      axios.post('https://us-central1-vue-shop-5a95e.cloudfunctions.net/CheckoutSession')
+      axios.post('http://localhost:5000/vue-shop-5a95e/us-central1/CheckoutSession')
         .then(response => {
             this.sessionId = response.data
             console.log(response.data)

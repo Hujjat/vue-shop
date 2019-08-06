@@ -14,7 +14,6 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
 
 exports.CheckoutSession = functions.https.onRequest((request, response) => {
 
-
     cors(request, response, () => {
 
         stripe.checkout.sessions.create({

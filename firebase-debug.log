@@ -1,0 +1,96 @@
+[debug] [2019-08-06T11:14:06.836Z] ----------------------------------------------------------------------
+[debug] [2019-08-06T11:14:06.842Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\CodeInspire\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2019-08-06T11:14:06.842Z] CLI Version:   7.1.0
+[debug] [2019-08-06T11:14:06.843Z] Platform:      win32
+[debug] [2019-08-06T11:14:06.843Z] Node Version:  v10.13.0
+[debug] [2019-08-06T11:14:06.849Z] Time:          Tue Aug 06 2019 21:14:06 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2019-08-06T11:14:06.849Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-06T11:14:06.878Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-06T11:14:06.881Z] > authorizing via signed-in user
+[debug] [2019-08-06T11:14:06.882Z] [iam] checking project vue-shop-5a95e for permissions ["firebase.projects.get"]
+[debug] [2019-08-06T11:14:06.886Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vue-shop-5a95e:testIamPermissions  
+
+[debug] [2019-08-06T11:14:09.185Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-06T11:14:09.196Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/vue-shop-5a95e  
+ 
+[debug] [2019-08-06T11:14:09.868Z] <<< HTTP RESPONSE 200
+[info] +  functions: Using node@10 from host.
+[debug] [2019-08-06T11:14:09.938Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/vue-shop-5a95e/adminSdkConfig  
+ 
+[debug] [2019-08-06T11:14:10.617Z] <<< HTTP RESPONSE 200
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\CodeInspire\Desktop\Vue\vue-shop\functions" for Cloud Functions...
+[debug] [2019-08-06T11:14:12.462Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions","node_version":"10.13.0"}
+[debug] [2019-08-06T11:14:12.463Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-06T11:14:12.482Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-06T11:14:12.493Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-06T11:14:12.496Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-06T11:14:12.654Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-06T11:14:12.805Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[info] i  functions: HTTP trigger initialized at http://localhost:5000/vue-shop-5a95e/us-central1/helloWorld
+[info] i  functions: HTTP trigger initialized at http://localhost:5000/vue-shop-5a95e/us-central1/CheckoutSession
+[debug] [2019-08-06T11:14:19.110Z] Accepted request GET /vue-shop-5a95e/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2019-08-06T11:14:22.960Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions","node_version":"10.13.0"}
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2019-08-06T11:14:22.971Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-06T11:14:23.014Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-06T11:14:23.022Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-06T11:14:23.031Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-06T11:14:23.196Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-06T11:14:23.335Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-06T11:14:23.715Z] [runtime-status] Trigger "CheckoutSession" has been found, beginning invocation! {}
+[debug] [2019-08-06T11:14:23.715Z] [runtime-status]  {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2019-08-06T11:14:23.715Z] [runtime-status] Running CheckoutSession in mode HTTPS {}
+[debug] [2019-08-06T11:14:23.718Z] [default-admin-app-used]  {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[debug] [2019-08-06T11:14:23.718Z] [runtime-status] Intializing default app. {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-06T11:14:23.754Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\8672"}
+[debug] [2019-08-06T11:14:23.763Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\8672"}
+[debug] [2019-08-06T11:14:23.792Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-06T11:14:23.826Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2019-08-06T11:15:37.721Z] Accepted request POST /vue-shop-5a95e/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2019-08-06T11:15:38.830Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions","node_version":"10.13.0"}
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2019-08-06T11:15:38.836Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-06T11:15:38.847Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-06T11:15:38.851Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-06T11:15:38.853Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-06T11:15:38.989Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-06T11:15:39.087Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-06T11:15:39.310Z] [runtime-status] Trigger "CheckoutSession" has been found, beginning invocation! {}
+[debug] [2019-08-06T11:15:39.311Z] [runtime-status]  {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2019-08-06T11:15:39.311Z] [runtime-status] Running CheckoutSession in mode HTTPS {}
+[debug] [2019-08-06T11:15:39.311Z] [default-admin-app-used]  {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[debug] [2019-08-06T11:15:39.312Z] [runtime-status] Intializing default app. {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-06T11:15:39.322Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\17364"}
+[debug] [2019-08-06T11:15:39.326Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\17364"}
+[debug] [2019-08-06T11:15:39.337Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-06T11:15:39.360Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2019-08-06T11:16:30.082Z] Accepted request POST /vue-shop-5a95e/us-central1/CheckoutSession --> CheckoutSession
+[debug] [2019-08-06T11:16:32.107Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions","node_version":"10.13.0"}
+[info] i  functions: Beginning execution of "CheckoutSession"
+[debug] [2019-08-06T11:16:32.109Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-06T11:16:32.123Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-06T11:16:32.131Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-06T11:16:32.134Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-06T11:16:32.297Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-06T11:16:32.843Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-06T11:16:33.133Z] [runtime-status] Trigger "CheckoutSession" has been found, beginning invocation! {}
+[debug] [2019-08-06T11:16:33.133Z] [runtime-status]  {"httpsTrigger":{},"name":"CheckoutSession","entryPoint":"CheckoutSession"}
+[debug] [2019-08-06T11:16:33.133Z] [runtime-status] Running CheckoutSession in mode HTTPS {}
+[debug] [2019-08-06T11:16:33.134Z] [default-admin-app-used]  {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[debug] [2019-08-06T11:16:33.134Z] [runtime-status] Intializing default app. {"databaseURL":"https://vue-shop-5a95e.firebaseio.com","storageBucket":"vue-shop-5a95e.appspot.com","projectId":"vue-shop-5a95e","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-06T11:16:33.151Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\15484"}
+[debug] [2019-08-06T11:16:33.155Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\CodeInspire\\Desktop\\Vue\\vue-shop\\functions\\15484"}
+[debug] [2019-08-06T11:16:33.173Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-06T11:16:33.200Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "CheckoutSession" in ~1s
+[debug] [2019-08-06T11:20:29.481Z] File C:\Users\CodeInspire\Desktop\Vue\vue-shop\functions\index.js changed, reloading triggers
