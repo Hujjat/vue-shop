@@ -58,16 +58,37 @@ export default {
 
       pay(){
 
-        stripe.redirectToCheckout({
-        // Make the id field from the Checkout Session creation API response
-        // available to this file, so you can provide it as parameter here
-        // instead of the {{CHECKOUT_SESSION_ID}} placeholder.
-        sessionId: this.sessionId.id
-        }).then(function (result) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer
-        // using `result.error.message`.
-        });
+          // data = {id:10,id:10}
+
+          let data = this.$store.state.cart.map(item => ({ [item.productId] : item.productQuantity}));
+          data = Object.assign({}, ...data);
+
+
+
+          axios.get('http://localhost:5000/vue-shop-5a95e/us-central1/CheckoutSession', {
+              params: {
+                  products : data
+              }
+          })
+            .then(response => {
+                this.sessionId = response.data
+                console.log(response.data)
+
+            })
+            .catch(error => {
+                console.log(error);
+            });
+
+        // stripe.redirectToCheckout({
+        // // Make the id field from the Checkout Session creation API response
+        // // available to this file, so you can provide it as parameter here
+        // // instead of the {{CHECKOUT_SESSION_ID}} placeholder.
+        // sessionId: this.sessionId.id
+        // }).then(function (result) {
+        // // If `redirectToCheckout` fails due to a browser or network
+        // // error, display the localized error message to your customer
+        // // using `result.error.message`.
+        // });
 
       }
    
@@ -75,15 +96,7 @@ export default {
 
   created(){
 
-      axios.post('http://localhost:5000/vue-shop-5a95e/us-central1/CheckoutSession')
-        .then(response => {
-            this.sessionId = response.data
-            console.log(response.data)
-
-        })
-        .catch(error => {
-            console.log(error);
-        });
+      
 
 
   }

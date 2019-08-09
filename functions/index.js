@@ -16,21 +16,29 @@ exports.CheckoutSession = functions.https.onRequest((request, response) => {
 
     cors(request, response, () => {
 
-        stripe.checkout.sessions.create({
-            success_url: "https://example.com/success",
-            cancel_url: "https://example.com/cancel",
-            payment_method_types: ["card"],
-            line_items: [{
-              name: "T-shirt",
-              description: "Comfortable cotton t-shirt",
-              amount: 1500,
-              currency: "aud",
-              quantity: 2
-            }]
-          }, function(err, session) {
+      let myProducts = request.query.products;
+
+      myProducts = Object.entries(JSON.parse(myProducts));
+      
+      response.send(myProducts);
+
+
+
+        // stripe.checkout.sessions.create({
+        //     success_url: "https://example.com/success",
+        //     cancel_url: "https://example.com/cancel",
+        //     payment_method_types: ["card"],
+        //     line_items: [{
+        //       name: "T-shirt",
+        //       description: "Comfortable cotton t-shirt",
+        //       amount: 1500,
+        //       currency: "aud",
+        //       quantity: 2
+        //     }]
+        //   }, function(err, session) {
                
-                response.send(session);
-          });
+        //         response.send(session);
+        //   });
     
         
       });
