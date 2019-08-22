@@ -65,30 +65,28 @@ export default {
 
 
 
-          axios.get('http://localhost:5000/vue-shop-5a95e/us-central1/CheckoutSession', {
+          axios.get('https://us-central1-vue-shop-5a95e.cloudfunctions.net/CheckoutSession', {
               params: {
                   products : data
               }
           })
             .then(response => {
                 this.sessionId = response.data
-                console.log(response.data)
+                console.log(response.data);
+
+                 stripe.redirectToCheckout({
+               
+                    sessionId: this.sessionId.id
+                    }).then(function (result) {
+                    
+                    });
+
 
             })
             .catch(error => {
                 console.log(error);
             });
 
-        // stripe.redirectToCheckout({
-        // // Make the id field from the Checkout Session creation API response
-        // // available to this file, so you can provide it as parameter here
-        // // instead of the {{CHECKOUT_SESSION_ID}} placeholder.
-        // sessionId: this.sessionId.id
-        // }).then(function (result) {
-        // // If `redirectToCheckout` fails due to a browser or network
-        // // error, display the localized error message to your customer
-        // // using `result.error.message`.
-        // });
 
       }
    
